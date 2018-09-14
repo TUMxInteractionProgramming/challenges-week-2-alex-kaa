@@ -1,0 +1,104 @@
+/* colorful palette
+
+* Background: #F5F5F5 (GREY 100)
+* Primary Text: black
+ 
+* Primary color: #3F51B5 (INDIGO)
+* Primary color_text : white
+* Accent color: #CDDC39 (LIME)
+* Accent color_text: black
+*/
+
+/* ----- Global ----- */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+}
+button, a {
+    color: black;
+    text-transform: uppercase;
+}
+
+/* ----- App bar ----- */
+h1 {
+    background-color: #3F51B5;
+    color: white;
+}
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+#moocus {
+    height: 56px;
+}
+
+/* ----- Channels ----- */
+ul {
+    list-style-type: none;
+    font-size: 16px;
+}
+ul li {
+    height: 18px;
+    margin: 1px 0;
+    background-color: white;
+    padding: 16px;
+}
+ul li * {
+    vertical-align: middle;
+}
+ul .selected {
+    color: #3F51B5;
+    border-left: 4px solid #3F51B5;
+}
+
+/* ----- Tab bar (buttons) ----- */
+#tab-bar {
+    background-color: white;
+}
+#tab-bar button {
+    background-color: white;
+    text-align: center;
+    font-size: 13px;
+    width: 33%;
+    height: 72px;
+    padding: 16px;
+    border: none;
+}
+#tab-bar button img {
+    display: block;
+    margin: auto;
+    margin-bottom: 4px;
+}
+#tab-bar .selected {
+    border-bottom: 4px solid #3F51B5;
+    color: #3F51B5;
+}
+
+/* ----- Messages ----- */
+.message {
+    width: 80%;
+    margin-bottom: 8px;
+    margin-left: 2.5%;
+}
+.message.own{
+    margin-left: 17.5%;
+}
+.message h3 {
+    font-size: medium;
+}
+.message p {
+    background-color: white;
+    padding: 16px;
+}
+.message button {
+    background-color: #cddc39;
+    color: black;
+}
+.message em {
+    font-size: larger;
+    font-style: normal;
+}
